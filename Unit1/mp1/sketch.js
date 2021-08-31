@@ -9,15 +9,13 @@ function setup() {
 
 function draw() {
 
-  background(100);
+  background(255, 0, 123);
+
 
 
   if (mouseIsPressed) {
     // stuff that shows when the mouse is pressed
     rect(100, 100, 100, 100) ;
-  } else {
-    // when the mouse isn't pressed!
-    ellipse(100, 100, 100, 100) ;
 
   }
 
