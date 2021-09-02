@@ -6,7 +6,6 @@ function setup() {
   f1 = loadFont("assets/cute.ttf");
   f2 = loadFont("assets/Bertha.ttf");
   textAlign(CENTER) ;
-  // hello
 }
 
 function draw() {
