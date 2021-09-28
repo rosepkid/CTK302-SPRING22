@@ -1,7 +1,7 @@
 let numberOfTouches ;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(400, 400);
 }
 
 function draw() {
@@ -11,6 +11,7 @@ function draw() {
 
   switch(numberOfTouches) {
     case 0:
+  //  image()
       text("no one is touching the screen", 5, 22) ;
       break ;
 
