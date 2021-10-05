@@ -9,6 +9,7 @@ function draw() {
   numberOfTouches = touches.length;
   text(numberOfTouches + ' touches', 5, 10);
 
+
   switch(numberOfTouches) {
     case 0:
   //  image()
