@@ -4,6 +4,7 @@ var font1, font2;
 
 var locationData;
 
+
 function preload() {
   locationData = getCurrentPosition();
   font1 = loadFont("assets/Mohave-Light.ttf");
@@ -22,21 +23,22 @@ function setup() {
 
 function draw() {
 
-
 }
 
 function positionPing(position) {
   // textSize(36);
   num++;
+
+  distance = calcGeoDistance(locationData.latitude, locationData.longitude, position.latitude, position.longitude, 'mi');
+
   background("#2452d1");
   fill("white");
   text("lat: " + position.latitude, 10, 40);
   text("long: " + position.longitude, 10, 90);
   text("number of updates " + num, 10, 140);
 
-  distance = calcGeoDistance(locationData.latitude, locationData.longitude, position.latitude, position.longitude, 'mi');
   text("you have moved " + distance, 10, 190);
-
-  text("remember to take a screenshot before you take a picture of your surroundings!", 10, 230, width-80, height);
+fill('red') ;
+  text("remember to take a screenshot before you take a picture of your surroundings!", 10, 260, 400);
 
 }
