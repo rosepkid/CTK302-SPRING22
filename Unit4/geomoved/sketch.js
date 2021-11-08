@@ -10,11 +10,12 @@ function preload() {
 }
 
 function setup() {
-   createCanvas(windowWidth, windowHeight);
+  // createCanvas(windowWidth, windowHeight);
+    createCanvas(displayWidth, displayHeight);
   num = 0;
   textFont(font1, 36);
   intervalCurrentPosition(positionPing, 5000); // this is what calls positionPing function
-//  createCanvas(displayWidth, displayHeight);
+
 
 
 }
@@ -36,6 +37,6 @@ function positionPing(position) {
   distance = calcGeoDistance(locationData.latitude, locationData.longitude, position.latitude, position.longitude, 'mi');
   text("you have moved " + distance, 10, 190);
 
-  text("remember to take a screenshot before you take a picture of your surroundings!", 10, 230);
+  text("remember to take a screenshot before you take a picture of your surroundings!", 10, 230, width-80, height);
 
 }
