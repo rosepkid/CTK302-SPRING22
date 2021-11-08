@@ -1,6 +1,6 @@
 var num;
 var distance;
-var font1;
+var font1, font2;
 
 var locationData;
 
