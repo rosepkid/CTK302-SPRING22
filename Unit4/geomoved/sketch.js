@@ -13,7 +13,8 @@ function setup() {
   num = 0;
   textFont(font1, 36);
   intervalCurrentPosition(positionPing, 5000); // this is what calls positionPing function
-  createCanvas(displayWidth, displayHeight);
+//  createCanvas(displayWidth, displayHeight);
+ createCanvas(windowWidth, windowHeight);
 
 }
 
